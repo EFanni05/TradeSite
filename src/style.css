@@ -21,6 +21,7 @@ body{
   list-style-image: url("../star.svg");
   color: rgb(62, 62, 231);
   font-weight: 500;
+  padding: 30px 0px 0px 100px;
 }
 
 #Universal{
