@@ -1,6 +1,5 @@
 [
     {"name" : "Hungary", "prio" : 300, "register" : 900},
-    {"name" : "USA", "prio" : 300, "register" : 900},
     {"name" : "Canada", "prio" : 300, "register" : 900},
     {"name" : "France", "prio" : 300, "register" : 900},
     {"name" : "UK", "prio" : 300, "register" : 900}
