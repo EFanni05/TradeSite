@@ -38,6 +38,7 @@ function Calculate(){
   const liRegister = document.createElement('li')
   let numberOfPc = parseInt((document.getElementById('number') as HTMLInputElement).value)
   let country = (document.getElementById('country') as HTMLInputElement).value
+  //find why the input doesnt work
   p.remove()
   ul.remove()
   liPrio.remove()
@@ -45,7 +46,26 @@ function Calculate(){
   try{
     let vs:Data = new Data(country, numberOfPc)
     if(checker(vs.name)){
-
+      if(vs.name == "Hungary"){
+        p.textContent = `Belföldi árak:`
+        ul.style.listStyleImage = `url(../star.svg)`
+        liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
+        liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
+        ul.appendChild(liPrio)
+        ul.appendChild(liRegister)
+        div.appendChild(p)
+        div.appendChild(ul)
+      }
+      else{
+        p.textContent = `${data.find(x => x.name == vs.name)} prices:`
+        ul.style.listStyleImage = `url(../star.svg)`
+        liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
+        liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
+        ul.appendChild(liPrio)
+        ul.appendChild(liRegister)
+        div.appendChild(p)
+        div.appendChild(ul)
+      }
     }
   }catch(e){
     if(e  instanceof Error){
@@ -53,7 +73,6 @@ function Calculate(){
       div.appendChild(p)
     }
   }
-  //let index = data.findIndex(x => x.name == country)
 }
 
 function load(){
