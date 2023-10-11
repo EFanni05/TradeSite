@@ -1,0 +1,82 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../bg.png");
+  background-size: cover;
+  color: black;
+  text-align: justifys;
+  line-height: 30px;
+}
+#content{
+  background-color: rgba(250, 250, 250, 0.573);
+  border-radius: 2%;
+  box-shadow: 2px;
+  font-weight: 300;
+}
+
+#top{
+  list-style-image: url("../octo.svg");
+}
+
+#Menu{
+  list-style-image: url("../star.svg");
+  color: rgb(62, 62, 231);
+  font-weight: 500;
+}
+
+#Universal{
+  list-style-image: url("../heart.svg");
+}
+
+#Trade{
+  list-style-image: url("../dog.svg");
+}
+
+#Sale{
+  list-style-image: url("../snail.svg");
+}
+
+#Hug{
+  width: 130%;
+}
+#last{
+  text-align: center;
+}
+
+#Seugmin{
+  height: 60%;
+  border-radius: 2%;
+  margin: 20px 0px 20px 0px;
+}
+
+#number, #country, #countrytext{
+  width: 150px;
+  text-align: center;
+}
+
+.A{
+  text-align: center;
+}
+
+h2, h3, h4{
+  text-align: center;
+  text-shadow: 3px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+p{
+  font-weight: 400;
+}
+
+a{
+  color: rgb(26, 51, 96);
+  font-style: italic;
+}
+
+footer{
+  font-size: 12px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.397);
+  text-align: center;
+  border-radius: 2%;
+}
