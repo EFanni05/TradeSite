@@ -1,6 +1,5 @@
 [
     {"name" : "Hungary", "prio" : 300, "register" : 900},
-//still in Huf!!!
     {"name" : "USA", "prio" : 1050, "register" : 3010},
     {"name" : "Austria", "prio" : 955, "register" : 2915},
     {"name" : "France", "prio" : 955, "register" : 2915}
