@@ -34,33 +34,40 @@ function Calculate(){
   const p = document.getElementById('p')!
   const liPrio = document.getElementById('prio')!
   const liRegister = document.getElementById('checked')!
-  let numberOfPc = parseInt((document.getElementById('number') as HTMLInputElement).value)
+  let numberOfPc = (document.getElementById('number') as HTMLInputElement).value
   let country = (document.getElementById('countrytext') as HTMLInputElement).value
-  p.textContent = ""
-  liPrio.textContent = ""
-  liRegister.textContent = ""
-  try{
-    let vs:Data = new Data(country, numberOfPc)
-    if(checker(vs.name)){
-      if(vs.pcs < 5){
-        if(vs.name == "Hungary"){
-          p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
-          liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
-          liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
+  if(numberOfPc == ""){
+    p.textContent = "Please fill out the number of PCs"
+    p.style.color = "red"
+  }
+  else{
+    p.textContent = ""
+    p.style.color = "black"
+    liPrio.textContent = ""
+    liRegister.textContent = ""
+    try{
+      let vs:Data = new Data(country, parseInt(numberOfPc))
+      if(checker(vs.name)){
+        if(vs.pcs < 5){
+          if(vs.name == "Hungary"){
+            p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
+            liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
+            liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
+          }
+          else{
+            p.textContent = `${vs.name} prices for ${vs.pcs}:`
+            liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
+            liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
+          }
         }
         else{
-          p.textContent = `${data.find(x => x.name == vs.name)} prices for ${vs.pcs}:`
-          liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
-          liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
+          throw new Error("The calculator only available until 50g (DM me about it)")
         }
       }
-      else{
-        throw new Error("The calculator only available until 50g (DM me about it)")
+    }catch(e){
+      if(e  instanceof Error){
+        p.textContent =`${e.message}`
       }
-    }
-  }catch(e){
-    if(e  instanceof Error){
-      p.textContent =`${e.message}`
     }
   }
 }
