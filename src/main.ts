@@ -37,7 +37,7 @@ function Calculate(){
   const liPrio = document.createElement('li')
   const liRegister = document.createElement('li')
   let numberOfPc = parseInt((document.getElementById('number') as HTMLInputElement).value)
-  let country = (document.getElementById('country') as HTMLInputElement).value
+  let country = (document.getElementById('countrytext') as HTMLInputElement).value
   //find why the input doesnt work
   p.remove()
   ul.remove()
