@@ -31,46 +31,36 @@ function checker(vs:string){
 }
 
 function Calculate(){
-  const div = document.getElementById('pricing')!
-  const p = document.createElement('p')
-  const ul = document.createElement('ul')
-  const liPrio = document.createElement('li')
-  const liRegister = document.createElement('li')
+  const p = document.getElementById('p')!
+  const liPrio = document.getElementById('prio')!
+  const liRegister = document.getElementById('checked')!
   let numberOfPc = parseInt((document.getElementById('number') as HTMLInputElement).value)
   let country = (document.getElementById('countrytext') as HTMLInputElement).value
-  //find why the input doesnt work
-  p.remove()
-  ul.remove()
-  liPrio.remove()
-  liRegister.remove()
+  p.textContent = ""
+  liPrio.textContent = ""
+  liRegister.textContent = ""
   try{
     let vs:Data = new Data(country, numberOfPc)
     if(checker(vs.name)){
-      if(vs.name == "Hungary"){
-        p.textContent = `Belföldi árak:`
-        ul.style.listStyleImage = `url(../star.svg)`
-        liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
-        liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
-        ul.appendChild(liPrio)
-        ul.appendChild(liRegister)
-        div.appendChild(p)
-        div.appendChild(ul)
+      if(vs.pcs < 5){
+        if(vs.name == "Hungary"){
+          p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
+          liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
+          liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
+        }
+        else{
+          p.textContent = `${data.find(x => x.name == vs.name)} prices for ${vs.pcs}:`
+          liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
+          liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
+        }
       }
       else{
-        p.textContent = `${data.find(x => x.name == vs.name)} prices:`
-        ul.style.listStyleImage = `url(../star.svg)`
-        liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
-        liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
-        ul.appendChild(liPrio)
-        ul.appendChild(liRegister)
-        div.appendChild(p)
-        div.appendChild(ul)
+        throw new Error("The calculator only available until 50g (DM me about it)")
       }
     }
   }catch(e){
     if(e  instanceof Error){
       p.textContent =`${e.message}`
-      div.appendChild(p)
     }
   }
 }
