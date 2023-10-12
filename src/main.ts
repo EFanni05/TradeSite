@@ -38,11 +38,11 @@ function Calculate(){
   const liRegister = document.createElement('li')
   let numberOfPc = parseInt((document.getElementById('number') as HTMLInputElement).value)
   let country = (document.getElementById('countrytext') as HTMLInputElement).value
-  //find why the input doesnt work
   p.remove()
   ul.remove()
   liPrio.remove()
   liRegister.remove()
+  //find why the input doesnt work
   try{
     let vs:Data = new Data(country, numberOfPc)
     if(checker(vs.name)){
