@@ -1,6 +1,9 @@
 [
     {"name" : "Hungary", "prio" : 300, "register" : 900},
-    {"name" : "USA", "prio" : 1050, "register" : 3010},
-    {"name" : "Austria", "prio" : 955, "register" : 2915},
-    {"name" : "France", "prio" : 955, "register" : 2915}
+    {"name" : "USA", "prio" : 2.70, "register" : 7.80},
+    {"name" : "Austria", "prio" : 2.45, "register" : 7.55},
+    {"name" : "France", "prio" : 2.45, "register" : 7.55},
+    {"name" : "Spain", "prio" : 2.45, "register" : 7.55},
+    {"name" : "Canada", "prio" : 2.70, "register" : 7.80},
+    {"name" : "Germany", "prio" : 2.45, "register" : 7.55}
 ]
