@@ -47,8 +47,9 @@ function Calculate(){
     liRegister.textContent = ""
     try{
       let vs:Data = new Data(country, parseInt(numberOfPc))
+      let weight:number = vs.pcs * 0.028 
       if(checker(vs.name)){
-        if(vs.pcs < 5){
+        if(weight < 0.5){
           if(vs.name == "Hungary"){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
             liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
@@ -77,7 +78,7 @@ function load(){
   try{
     let a:Shipping
     for(const vs of Country){
-      a = new Shipping(vs.name, vs.prio, vs.register)
+      a = new Shipping(vs.name, vs.prio, vs.register, vs.prio500, vs.register500)
       data.push(a)
     }
   }catch(e){
