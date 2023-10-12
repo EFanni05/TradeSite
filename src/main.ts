@@ -48,6 +48,7 @@ function Calculate(){
     try{
       let vs:Data = new Data(country, parseInt(numberOfPc))
       if(checker(vs.name)){
+        //something
         if(vs.pcs < 5){
           if(vs.name == "Hungary"){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
