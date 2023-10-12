@@ -5,5 +5,9 @@
     {"name" : "France", "prio" : 2.45, "register" : 7.55},
     {"name" : "Spain", "prio" : 2.45, "register" : 7.55},
     {"name" : "Canada", "prio" : 2.70, "register" : 7.80},
-    {"name" : "Germany", "prio" : 2.45, "register" : 7.55}
+    {"name" : "Germany", "prio" : 2.45, "register" : 7.55},
+    {"name" : "Italy", "prio" : 2.45, "register" : 7.55},
+    {"name": "Finland", "prio" : 2.45, "register" : 7.55},
+    {"name" : "Norway", "prio" : 2.45, "register" : 7.55},
+    {"name" : "Sweden", "prio" : 2.45, "register" : 7.55}
 ]
