@@ -1,13 +1,16 @@
 [
-    {"name" : "Hungary", "prio" : 300, "register" : 900},
-    {"name" : "USA", "prio" : 2.70, "register" : 7.80},
-    {"name" : "Austria", "prio" : 2.45, "register" : 7.55},
-    {"name" : "France", "prio" : 2.45, "register" : 7.55},
-    {"name" : "Spain", "prio" : 2.45, "register" : 7.55},
-    {"name" : "Canada", "prio" : 2.70, "register" : 7.80},
-    {"name" : "Germany", "prio" : 2.45, "register" : 7.55},
-    {"name" : "Italy", "prio" : 2.45, "register" : 7.55},
-    {"name": "Finland", "prio" : 2.45, "register" : 7.55},
-    {"name" : "Norway", "prio" : 2.45, "register" : 7.55},
-    {"name" : "Sweden", "prio" : 2.45, "register" : 7.55}
+    {"name" : "Austria", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Canada", "prio" : 2.75, "register" : 7.85, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Finland", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "France", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Germany", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Hungary", "prio" : 300, "register" : 900, "prio500" : 850, "register500" : 1460},
+    {"name" : "Italy", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Norway", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Portugal", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Romania", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Spain", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Sweden", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" : "United Kindom", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10}, 
+    {"name" : "United States", "prio" : 2.75, "register" : 7.85, "prio500" : 8, "register500" : 13.10}
 ]
