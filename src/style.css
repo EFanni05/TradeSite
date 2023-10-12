@@ -39,8 +39,15 @@ body{
 #Hug{
   width: 130%;
 }
+
 #last{
   text-align: center;
+}
+
+#pricing{
+  text-align: center;
+  font-size: 120%;
+  margin-top: 30px;
 }
 
 #Seugmin{
@@ -52,6 +59,10 @@ body{
 #number, #country, #countrytext{
   width: 150px;
   text-align: center;
+}
+
+#ul{
+  list-style: none;
 }
 
 .A{

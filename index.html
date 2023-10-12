@@ -82,15 +82,20 @@
         <div id="Shipping" class="row m-5">
             <h3>Shipping Calculatot</h3>
             <p class="A text-primary"><i>Still under work</i></p>
-            <!--Calculator basic ver-->
+            <!--Calculator semibasic ver-->
             <div id="Calculatot" class="col-md-7 col-xl-7 col-sm-12 col-12">
-                <p>Amount of photocards: </p><input type="number" min="1" placeholder="1" required id="number" class="form-control"><br>
+                <p>Amount of photocards: </p><input type="number" min="1" placeholder="1" id="number" class="form-control"><br>
                 <input class="form-control" list="country" id="countrytext" placeholder="Type here your country..."><br>
                 <datalist id="country">
                 </datalist>
                 <button id="calculate" class="btn btn-primary mt-2">Calculate!</button>
             </div>
             <div class="col-md-2 col-xl-2 col-sm-12 col-12" id="pricing">
+                <p id="p"></p>
+                <ul id="ul">
+                    <li id="prio"></li>
+                    <li id="checked"></li>
+                </ul>
             </div>
             <div class="col-md-3 col-xl-3 col-sm-12 col-12 align-self-top">
               <img src="./PuppyM.png" alt="PuppyM drawing which i own" id="Hug" class="img-fluid">
