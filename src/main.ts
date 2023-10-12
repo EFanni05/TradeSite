@@ -32,6 +32,7 @@ function checker(vs:string){
 
 function Calculate(){
   const p = document.getElementById('p')!
+  const p1 = document.getElementById('p1')!
   const liPrio = document.getElementById('prio')!
   const liRegister = document.getElementById('checked')!
   let numberOfPc = (document.getElementById('number') as HTMLInputElement).value
@@ -52,17 +53,33 @@ function Calculate(){
         if(weight < 0.5){
           if(vs.name == "Hungary"){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
-            liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} ft`
-            liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} ft`
+            liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio} ft`
+            liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register} ft`
+            p1.textContent ="Ajánlott nyomkövetett!"
           }
           else{
             p.textContent = `${vs.name} prices for ${vs.pcs}:`
-            liPrio.textContent =`${data.find(x => x.name == vs.name)!.prio} €`
-            liRegister.textContent =`${data.find(x => x.name == vs.name)!.register} €`
+            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio} €`
+            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register} €`
+            p1.textContent = "Register is TRACKED!"
+          }
+        }
+        else if(weight < 2000){
+          if(vs.name == "Hungary"){
+            p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
+            liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio500} ft`
+            liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register500} ft`
+            p1.textContent ="Ajánlott nyomkövetett!"
+          }
+          else{
+            p.textContent = `${vs.name} prices for ${vs.pcs}:`
+            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio500} €`
+            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register500} €`
+            p1.textContent = "Register is TRACKED!"
           }
         }
         else{
-          throw new Error("The calculator only available until 50g (DM me about it)")
+          throw new Error("The calculator only available until 500g (DM me about it)")
         }
       }
     }catch(e){
