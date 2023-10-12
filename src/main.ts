@@ -29,9 +29,17 @@ function checker(vs:string){
     throw new Error("ERROR: This country isn't in my list (DM me about it)")
   }
 }
+let clickCount: number
 
 function Calculate(){
   const p = document.getElementById('p')!
+  const div = document.getElementById('spinner-div')!
+  const spam = document.getElementById('spinner-spam')!
+  if(clickCount == 0){
+  div.remove()
+  spam.remove()
+  clickCount++
+  }
   const p1 = document.getElementById('p1')!
   const liPrio = document.getElementById('prio')!
   const liRegister = document.getElementById('checked')!
@@ -91,6 +99,7 @@ function Calculate(){
 }
 
 function load(){
+  clickCount = 0
   document.getElementById('calculate')!.addEventListener('click', Calculate)
   try{
     let a:Shipping

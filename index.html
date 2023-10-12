@@ -83,14 +83,17 @@
             <h3>Shipping Calculatot</h3>
             <p class="A text-primary"><i>Still under work</i></p>
             <!--Calculator semibasic ver-->
-            <div id="Calculatot" class="col-md-6 col-xl-6 col-sm-12 col-12">
+            <div id="Calculatot" class="col-md-2 col-xl-2 col-sm-12 col-12">
                 <p>Amount of photocards: </p><input type="number" min="1" placeholder="1" id="number" class="form-control"><br>
                 <input class="form-control" list="country" id="countrytext" placeholder="Type here your country..."><br>
                 <datalist id="country">
                 </datalist>
                 <button id="calculate" class="btn btn-primary mt-2 ms-3">Calculate!</button>
             </div>
-            <div class="col-md-2 col-xl-2 col-sm-12 col-12" id="pricing">
+            <div class="col-md-7 col-xl-7 col-sm-12 col-12" id="pricing">
+                <div class="spinner-border text-info" role="status" id="spinner-div">
+                    <span class="visually-hidden" id="spinner-spam">Loading...</span>
+                </div>
                 <p id="p"></p>
                 <ul id="ul">
                     <li id="prio"></li>
@@ -98,7 +101,7 @@
                 </ul>
                 <p id="p1"></p>
             </div>
-            <div class="col-md-4 col-xl-3 col-sm-12 col-12 align-self-top">
+            <div class="col-md-3 col-xl-3 col-sm-12 col-12 align-self-top">
               <img src="../SeugminGif1.gif" alt="Seugmin" id="Hug" class="img-fluid">
               <p id="last"><a href="#Top" class="m-2">back</a></p>
             </div>
