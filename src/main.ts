@@ -100,7 +100,7 @@ function Calculate(){
 
 function load(){
   clickCount = 0
-  console.log("If you see this send me 'star' emoji \n(I guess you also learnt a litte bit of 'how to make a website)\nI know the code is bad even if I study this for like 5 years,\nI'm far better at C# or Java than F JavaScript or TypeScript(btw i worte in this)\nI don't want to work on frontend ever but I'm not willing to make a carrd or website builder site\nIf you see anything wrong with the inner code tell me!")
+  console.log("If you see this send me 'star' emoji\n(I guess you also learnt a litte bit of 'how to make a website)\nI know the code is bad even if I study this for like 5 years,\nI'm far better at C# or Java than F JavaScript or TypeScript(btw i worte in this)\nI don't want to work on frontend ever but I'm not willing to make a carrd or website builder site\nIf you see anything wrong with the inner code tell me!\nno comment on spelling, I know I'm terible")
   document.getElementById('calculate')!.addEventListener('click', Calculate)
   try{
     let a:Shipping
