@@ -4,7 +4,7 @@
     {"name" : "Finland", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "France", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Germany", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
-    {"name" : "Hungary/Magyarország", "prio" : 300, "register" : 900, "prio500" : 850, "register500" : 1460},
+    {"name" : "Hungary", "prio" : 300, "register" : 900, "prio500" : 850, "register500" : 1460},
     {"name" : "Italy", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Norway", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Portugal", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
