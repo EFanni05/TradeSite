@@ -1,6 +1,6 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("../bg.png");
+  background-image: url("./img/bg.png");
   background-size: cover;
   color: black;
   text-align: justifys;
@@ -15,26 +15,26 @@ body{
 }
 
 #top{
-  list-style-image: url("../octo.svg");
+  list-style-image: url("./img/octo.svg");
 }
 
 #Menu{
-  list-style-image: url("../star.svg");
+  list-style-image: url("./img/star.svg");
   color: rgb(62, 62, 231);
   font-weight: 500;
   padding: 30px 0px 0px 100px;
 }
 
 #Universal{
-  list-style-image: url("../heart.svg");
+  list-style-image: url("./img/heart.svg");
 }
 
 #Trade{
-  list-style-image: url("../dog.svg");
+  list-style-image: url("./img/dog.svg");
 }
 
 #Sale{
-  list-style-image: url("../snail.svg");
+  list-style-image: url("./img/snail.svg");
 }
 
 #Hug{

@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import {Shipping} from './Shippingdata';
 import {Data} from './Data';
 import Country from './country.json';
+//const {BASE_URL} = import.meta.env;
 let data:Shipping [] = []
 
 function AddItem(vs:Shipping){
