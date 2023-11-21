@@ -20,7 +20,7 @@
 <img height="80" src="https://1.bp.blogspot.com/-fJip51ej0mU/X5djBJlMX7I/AAAAAABHl8k/5VHdv4bxAukMXIrgMhiLoKZmPlnoVl18QCLcBGAsYHQ/s370/AS0007417_18.gif">
 <hr>
 <p><b>Please use the site when you buying, thats the main reason why i write it</b><br>
-<i>and I din't want to learn how to make a carrd</i></p>
+<i>and I didn't want to learn how to make a carrd</i></p>
 <p>As you can see, this profile is my personal+school account so there's a lot of stuff on it</p>
 <p><i>I'll try updating soon as possible when your country isn't in the form</i></p>
 <img height="250" src="https://1.bp.blogspot.com/-zOfUir_Y8PA/X5djAteQWgI/AAAAAABHl8g/0TpVdUxoxV0HGxmPEsXZA4dgrZeap5yygCLcBGAsYHQ/s370/AS0007417_17.gif">
