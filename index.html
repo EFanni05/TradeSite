@@ -91,10 +91,10 @@
             <!--Calculator semibasic ver-->
             <div id="Calculatot" class="col-md-2 col-xl-2 col-sm-12 col-12">
                 <p>Amount of photocards: </p><input type="number" min="1" placeholder="1" id="number" class="form-control"><br>
-                <input class="form-control" list="country" id="countrytext" placeholder="Type here your country..."><br>
                 <!--TS AddItem-->
-                <datalist id="country">
-                </datalist>
+                <select class="form-select" aria-label="Default select example" id="country">
+                    <option selected>Select country</option>
+                  </select>
                 <button id="calculate" class="btn btn-primary mt-2 ms-3">Calculate!</button>
             </div>
             <!--TS price claculator-->

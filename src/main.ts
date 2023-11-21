@@ -45,7 +45,7 @@ function Calculate(){
   const liPrio = document.getElementById('prio')!
   const liRegister = document.getElementById('checked')!
   let numberOfPc = (document.getElementById('number') as HTMLInputElement).value
-  let country = (document.getElementById('countrytext') as HTMLInputElement).value
+  let country = (document.getElementById('country') as HTMLInputElement).value
   if(numberOfPc == ""){
     p.textContent = "Please fill out the number of PCs"
     p.style.color = "red"

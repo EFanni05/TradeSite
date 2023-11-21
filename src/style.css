@@ -37,6 +37,13 @@ body{
   list-style-image: url("./img/snail.svg");
 }
 
+#Calculator{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 #Hug{
   width: 90%;
   border-radius: 2%;
