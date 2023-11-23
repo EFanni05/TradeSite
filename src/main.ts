@@ -93,6 +93,9 @@ function Calculate(){
     }catch(e){
       if(e  instanceof Error){
         p.textContent =`${e.message}`
+        liPrio.textContent = ""
+        liRegister.textContent= ""
+        p1.textContent = ""
       }
     }
   }

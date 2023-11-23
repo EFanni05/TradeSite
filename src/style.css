@@ -9,7 +9,6 @@ body{
 
 #content{
   background-color: rgba(250, 250, 250, 0.573);
-  border-radius: 2%;
   box-shadow: 2px;
   font-weight: 300;
 }
@@ -37,11 +36,9 @@ body{
   list-style-image: url("./img/snail.svg");
 }
 
-#Calculator{
+.Calculator{
   text-align: center;
   margin: auto;
-  width: 50%;
-  padding: 10px;
 }
 
 #Hug{
@@ -55,7 +52,7 @@ body{
 
 #pricing{
   text-align: center;
-  font-size: 120%;
+  font-size: 115%;
   margin-top: 30px;
 }
 
@@ -95,9 +92,13 @@ a{
 }
 
 footer{
-  font-size: 12px;
+  font-size: 14px;
   color: black;
   background-color: rgba(255, 255, 255, 0.397);
   text-align: center;
   border-radius: 2%;
+}
+
+#calculate{
+  width: 140px;
 }
