@@ -37,11 +37,9 @@ body{
   list-style-image: url("./img/snail.svg");
 }
 
-#Calculator{
+.Calculator{
   text-align: center;
   margin: auto;
-  width: 50%;
-  padding: 10px;
 }
 
 #Hug{
@@ -55,7 +53,7 @@ body{
 
 #pricing{
   text-align: center;
-  font-size: 120%;
+  font-size: 115%;
   margin-top: 30px;
 }
 
@@ -100,4 +98,8 @@ footer{
   background-color: rgba(255, 255, 255, 0.397);
   text-align: center;
   border-radius: 2%;
+}
+
+#calculate{
+  width: 140px;
 }
