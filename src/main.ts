@@ -64,6 +64,7 @@ function Calculate(){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
             liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio} ft`
             liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register} ft`
+            p1.textContent = ""
           }
           else{
             p.textContent = `${vs.name} prices for ${vs.pcs}:`
@@ -77,7 +78,7 @@ function Calculate(){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
             liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio500} ft`
             liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register500} ft`
-            p1.textContent ="Ajánlott nyomkövetett!"
+            p1.textContent = ""
           }
           else{
             p.textContent = `${vs.name} prices for ${vs.pcs}:`
