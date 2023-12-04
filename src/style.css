@@ -17,6 +17,10 @@ body{
   list-style-image: url("./img/octo.svg");
 }
 
+#Gos{
+  list-style-image: url("./img/flower.svg");
+}
+
 #Menu{
   list-style-image: url("./img/star.svg");
   color: rgb(62, 62, 231);
