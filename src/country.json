@@ -2,6 +2,7 @@
     {"name" : "Austria", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Canada", "prio" : 2.75, "register" : 7.85, "prio500" : 8, "register500" : 13.10},
     {"name" :  "Czech Republic", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
+    {"name" :  "Denmark", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Finland", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "France", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
     {"name" : "Germany", "prio" : 2.5, "register" : 7.60, "prio500" : 8, "register500" : 13.10},
