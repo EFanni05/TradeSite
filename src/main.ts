@@ -57,7 +57,7 @@ function Calculate(){
     liRegister.textContent = ""
     try{
       let vs:Data = new Data(country, parseInt(numberOfPc))
-      let weight:number = vs.pcs * 0.28 
+      let weight:number = vs.pcs * 0.15 
       if(checker(vs.name)){
         if(weight < 0.5){
           if(vs.name == "Hungary"){
