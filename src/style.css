@@ -66,6 +66,10 @@ body{
   margin: 20px 0px 20px 0px;
 }
 
+#masterlist{
+  width: 200px;
+}
+
 #number, #country, #countrytext{
   width: 150px;
   text-align: center;

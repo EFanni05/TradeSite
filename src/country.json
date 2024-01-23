@@ -8,6 +8,7 @@
     {"name" : "Germany", "prio" : 2.80, "register" : 8.50, "prio500" : 8, "register500" : 13.10},
     {"name" : "Hungary", "prio" : 330, "register" : 990, "prio500" : 945, "register500" : 1605},
     {"name" : "Italy", "prio" : 2.80, "register" : 8.50, "prio500" : 8, "register500" : 13.10},
+    {"name" : "Lithuania", "prio" : 2.80, "register" : 8.50, "prio500" : 8, "register500" : 13.10},
     {"name": "Netherlands", "prio" : 2.80, "register" : 8.50 , "prio500" : 8, "register500" : 13.10},
     {"name" : "Norway", "prio" : 2.80, "register" : 8.50, "prio500" : 8, "register500" : 13.10},
     {"name" : "Portugal", "prio" : 2.80, "register" : 8.50, "prio500" : 8, "register500" : 13.10},
