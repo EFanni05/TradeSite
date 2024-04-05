@@ -27,4 +27,3 @@
 <br>
 <a href="https://www.instagram.com/fannimongmong/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" height="35"></a>
 <a href="https://twitter.com/E_Fanni05" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/220px-Logo_of_Twitter.svg.png" height="35"></a><br>
-<a href="https://efanni05.github.io/TradeSite/">back to the site</a>
