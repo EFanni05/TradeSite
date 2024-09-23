@@ -6,6 +6,7 @@ import {Data} from './Data';
 import Country from './country.json';
 //const {BASE_URL} = import.meta.env;
 let data:Shipping [] = []
+const eur:number = 300      //still looking into some dynamic options
 
 function AddItem(vs:Shipping){
   const option = document.createElement('option')
@@ -13,6 +14,14 @@ function AddItem(vs:Shipping){
   option.value = `${vs.name}`
   option.textContent = `${vs.name}`
   select.appendChild(option)
+}
+
+function addtions(){
+  const addPrice = (document.getElementById('addtions') as HTMLInputElement).value
+  if(addPrice === '0'){
+    return 0
+  }
+  return parseFloat(addPrice)
 }
 
 function checker(vs:string){
@@ -58,18 +67,19 @@ function Calculate(){
     try{
       let vs:Data = new Data(country, parseInt(numberOfPc))
       let weight:number = vs.pcs * 0.05 
+      let addOn:number = addtions()
       if(checker(vs.name)){
         if(weight < 0.5){
           if(vs.name == "Hungary"){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
-            liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio} ft`
-            liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register} ft`
-            p1.textContent = ""
+            liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio} + ${addOn*eur} ft`
+            liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register} + ${addOn*eur} ft`
+            p1.textContent = "Ajánlott nyömkövetett"
           }
           else{
             p.textContent = `${vs.name} prices for ${vs.pcs}:`
-            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio} €`
-            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register} €`
+            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio} + ${addOn} €`
+            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register} + ${addOn} €`
             p1.textContent = "Register is TRACKED!"
           }
         }
@@ -78,12 +88,12 @@ function Calculate(){
             p.textContent = `Belföldi árak ${vs.pcs}db Photocard-ra:`
             liPrio.textContent =`Elsőbségi: ${data.find(x => x.name == vs.name)!.prio500} ft`
             liRegister.textContent =`Ajánlott: ${data.find(x => x.name == vs.name)!.register500} ft`
-            p1.textContent = ""
+            p1.textContent = "Ajánlott nyomkövetett"
           }
           else{
             p.textContent = `${vs.name} prices for ${vs.pcs}:`
-            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio500} €`
-            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register500} €`
+            liPrio.textContent =`Priority: ${data.find(x => x.name == vs.name)!.prio500} + ${addOn} €`
+            liRegister.textContent =`Register: ${data.find(x => x.name == vs.name)!.register500} + ${addOn} €`
             p1.textContent = "Register is TRACKED!"
           }
         }
