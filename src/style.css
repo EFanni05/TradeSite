@@ -54,7 +54,7 @@ ul{
   width: 200px;
 }
 
-#number, #country, #countrytext{
+#number, #country, #countrytext, #addtions{
   width: 150px;
   text-align: center;
 }
