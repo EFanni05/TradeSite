@@ -5,12 +5,14 @@
     {"name" :  "Czech Republic", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" :  "Denmark", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Finland", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
+    {"name" : "Ireland", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "France", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Germany", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Hungary", "prio" : 330, "register" : 990, "prio500" : 945, "register500" : 1605},
     {"name" : "Italy", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Latvia", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Lithuania", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
+    {"name" : "Luxenburg", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name": "Netherlands", "prio" : 2, "register" : 7 , "prio500" : 8, "register500" : 12},
     {"name" : "Norway", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Portugal", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
@@ -18,6 +20,7 @@
     {"name" : "Romania", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Spain", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Sweden", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
+    {"name" : "Slovakia", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "United Kindom", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12}, 
     {"name" : "United States", "prio" : 2.5, "register" : 7.20, "prio500" : 8.80, "register500" : 13.50}
 ]
