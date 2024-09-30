@@ -19,8 +19,8 @@
     {"name" : "Poland", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Romania", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Spain", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
-    {"name" : "Sweden", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "Slovakia", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
+    {"name" : "Sweden", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12},
     {"name" : "United Kindom", "prio" : 2, "register" : 7, "prio500" : 8, "register500" : 12}, 
     {"name" : "United States", "prio" : 2.5, "register" : 7.20, "prio500" : 8.80, "register500" : 13.50}
 ]
