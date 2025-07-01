@@ -1,5 +1,5 @@
 const url:string = "-- MY URL --"
-var key:string = ""
+var key:string = " key here " //put in some encryption file reading here
 
 async function fetchingAPI(currency : string, type:string) {
     await fetch(url, {
@@ -25,6 +25,7 @@ async function fetchingAPI(currency : string, type:string) {
             } else {
                 // data.type is not a valid number
                 console.log("Not a valid number:", data.type);
+                throw new Error("Invalid type received from API");
             }
         }
     })
